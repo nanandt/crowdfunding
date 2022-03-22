@@ -111,3 +111,13 @@ func (h *userHandler) CheckEmailAvailability(c *gin.Context) {
 	response := helper.APIResponse(metaMessage, http.StatusOK, "success", data)
 	c.JSON(http.StatusOK, response)
 }
+
+func (h *userHandler) UploadAvatar(c *gin.Context) {
+	/*
+		input dari user
+		save image di folder "images"
+		service -> repository
+		hardcode JWT
+		yg disimpan di db bukan filenya tp hanya path gambarnya saja
+	*/
+}
